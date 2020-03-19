@@ -235,8 +235,8 @@
                     <p class="col-6">
                         <label for="email">
                             Email:<sup class="rood ml-1">*</sup>
-                            <input type="email" id="email" name="Geef je email hier" placeholder="Wat is je email?"
-                                   size="25" required class="ml-2">
+                            <input type="text" id="email" name="email" placeholder="Wat is je email?"
+                                   size="25" pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})" required class="ml-2">
                         </label>
                     </p>
                     <div id="categorie" class="col-6">
@@ -245,8 +245,8 @@
                         </p>
                         <p>
                             <select id="keuze" name="keuze" size="1" required>
-                                <option value="A" selected>Algemene info</option>
-                                <option value="F">Feedback</option>
+                                <option value="Algemene info" selected>Algemene info</option>
+                                <option value="Feedback">Feedback</option>
                             </select>
                         </p>
                     </div>
