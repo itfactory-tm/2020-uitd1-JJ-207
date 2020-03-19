@@ -1,2 +1,84 @@
 /* in stylish-portfolio.min.css wijzig je NIETS */
 /* schrijf in dit bestand je eigen stijlregels om opmaak aan te passen */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+form {
+    margin: auto;
+    text-align: center;
+    max-width: 550px;
+}
+
+/* styling for placeholder */
+::-webkit-input-placeholder {
+    padding-left: 5px;
+    vertical-align: center;
+    font-size: 14px;
+    line-height: 21px;
+    color: black;
+    font-variant: small-caps;
+    text-align: left;
+}
+
+/* styling input*/
+input, textarea{
+    padding-left: 5px;
+    border: 1px solid black;
+}
+
+select{
+    cursor: pointer;
+}
+
+select option{
+    padding-left: 10px;
+}
+
+textarea{
+    border: 1px solid black;
+    margin-left: 23px;
+}
+
+input:invalid , textarea:invalid{
+    background-color: rgba(255, 0, 0, 0.1);
+    background-image: url(dist/img/invalid.png);
+    background-position: center right;
+    padding: 5px;
+}
+
+
+#container {
+    width: 650px;
+    margin: auto;
+}
+
+#categorie{
+    position: relative;
+}
+
+#keuze{
+    position: absolute;
+    top: 4vh;
+    right: 5vw;
+    border: 1px solid black;
+}
+
+#knop{
+    position: relative;
+}
+
+.rood {
+    font-weight: bold;
+    background-color: transparent;
+    color: red;
+}
+.btn-dark{
+    border-radius: 25px;
+    position: absolute;
+    top: 11vh;
+    left: 5vw;
+    cursor: pointer;
+}

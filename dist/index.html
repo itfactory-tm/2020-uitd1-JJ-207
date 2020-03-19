@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Britt Ooms, Michiel Van Eynde, Stef Van Gool">
 
     <title>Stylish-portfolio - Bootstrap Theme</title>
 
@@ -212,12 +212,63 @@
 <section id="contact" class="content-section">
     <div class="container text-center">
         <div class="content-section-heading text-center">
-            <h3 class="text-secondary mb-0">Contact</h3>
-            <h2 class="mb-5">Contact us</h2>
+            <h2 class="text-secondary mb-0">Contact</h2>
+            <h3 class="mb-5">Wat is je vraag?</h3>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, explicabo iusto? Adipisci aliquam animi
-            autem, cupiditate doloremque enim id nulla numquam quae quasi, qui quidem tempore vel, veniam voluptatem
-            voluptatibus!</p>
+        <div id="container">
+            <form action="formulier_afhandeling.php" method="post">
+                <div class="row">
+                    <p class="col-6">
+                        <label for="voornaam">
+                            Voornaam:<sup class="rood ml-1">*</sup>
+                            <input type="text" id="voornaam" name="voornaam" placeholder="Geef hier je voornaam" size="25" required
+                                   class="ml-2">
+                        </label>
+                    </p>
+                    <p class="col-6">
+                        <label for="achternaam">
+                            Achternaam:<sup class="rood ml-1">*</sup>
+                            <input type="text" id="achternaam" name="achternaam" placeholder="Geef hier je achternaam" size="25" required
+                                   class="ml-2">
+                        </label>
+                    </p>
+                    <p class="col-6">
+                        <label for="email">
+                            Email:<sup class="rood ml-1">*</sup>
+                            <input type="email" id="email" name="Geef je email hier" placeholder="Wat is je email?"
+                                   size="25" required class="ml-2">
+                        </label>
+                    </p>
+                    <div id="categorie" class="col-6">
+                        <p>
+                            <label for="keuze">In welke categorie behoort jou vraag?:<sup class="rood">*</sup></label>
+                        </p>
+                        <p>
+                            <select id="keuze" name="keuze" size="1" required>
+                                <option value="A" selected>Algemene info</option>
+                                <option value="F">Feedback</option>
+                            </select>
+                        </p>
+                    </div>
+                    <p class="col-9 ml-1">
+                        <label for="bericht">
+                            Bericht:<sup class="rood ml-1">*</sup>
+                        </label>
+                    </p>
+
+                    <p class="col-8">
+                            <textarea name="vraag" id="bericht" cols="50" rows="5" placeholder="Schrijf hier je vraag"
+                                      required></textarea>
+                    </p>
+                    <div id="knop" class="col-4">
+                        <p>
+                            <input type="submit" class="btn-dark p-2">
+                        </p>
+                    </div>
+                </div>
+            </form>
+
+        </div>
     </div>
 </section>
 
