@@ -208,56 +208,61 @@
             <h3 class="mb-5">Wat is je vraag?</h3>
         </div>
         <div id="container">
-            <form action="formulier_afhandeling.php" method="post">
+            <form action="formulier_afhandeling.php" method="post" novalidate class="needs-validation">
                 <div class="row">
-                    <p class="col-6">
-                        <label for="voornaam">
-                            Voornaam:<sup class="rood ml-1">*</sup>
+                    <div class="col-12 col-md-6">
+                        <div class="form-group">
+                            <label for="voornaam">Voornaam:<sup class="rood">*</sup></label>
                             <input type="text" id="voornaam" name="voornaam" placeholder="Geef hier je voornaam"
-                                   size="25" required
-                                   class="ml-2">
-                        </label>
-                    </p>
-                    <p class="col-6">
-                        <label for="achternaam">
-                            Achternaam:<sup class="rood ml-1">*</sup>
-                            <input type="text" id="achternaam" name="achternaam" placeholder="Geef hier je achternaam"
-                                   size="25" required
-                                   class="ml-2">
-                        </label>
-                    </p>
-                    <p class="col-6">
-                        <label for="email">
-                            Email:<sup class="rood ml-1">*</sup>
-                            <input type="email" id="email" name="Geef je email hier" placeholder="Wat is je email?"
-                                   size="25" required class="ml-2">
-                        </label>
-                    </p>
-                    <div id="categorie" class="col-6">
-                        <p>
-                            <label for="keuze">In welke categorie behoort jou vraag?:<sup class="rood">*</sup></label>
-                        </p>
-                        <p>
-                            <select id="keuze" name="keuze" size="1" required>
-                                <option value="A" selected>Algemene info</option>
-                                <option value="F">Feedback</option>
-                            </select>
-                        </p>
+                                   size="25" required class="form-control mt-2">
+                            <div class="invalid-feedback">Dit is een ongeldige voornaam</div>
+                        </div>
                     </div>
-                    <p class="col-9 ml-1">
-                        <label for="bericht">
-                            Bericht:<sup class="rood ml-1">*</sup>
-                        </label>
-                    </p>
+                    <div class="col-12 col-md-6">
+                        <div class="form-group">
+                            <label for="achternaam">Achternaam:<sup class="rood">*</sup></label>
+                            <input type="text" id="achternaam" name="achternaam" placeholder="Geef hier je achternaam"
+                                   size="25" required class="form-control  mt-2">
+                            <div class="invalid-feedback">Dit is een ongeldige achternaam</div>
+                        </div>
 
-                    <p class="col-8">
-                            <textarea name="vraag" id="bericht" cols="50" rows="5" placeholder="Schrijf hier je vraag"
-                                      required></textarea>
-                    </p>
-                    <div id="knop" class="col-4">
-                        <p>
-                            <input type="submit" class="btn-dark p-2 rounded-pill">
-                        </p>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="form-group">
+                            <label for="email">Email:<sup class="rood">*</sup></label>
+                            <input type="text" id="email" name="email" placeholder="Wat is je email?" size="25"
+                                   pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})"
+                                   required class=" mt-2 form-control ">
+                            <div class="invalid-feedback">Dit is geen geldige email</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="form-group">
+                            <label for="keuze">Waaronder valt uw vraag:</label>
+                            <select id="keuze" name="keuze" size="1" class="form-control mt-2">
+                                <option value="Algemene info" selected>Algemene info</option>
+                                <option value="Aanvraag">Aanvraag website</option>
+                                <option value="Feedback">Feedback</option>
+                                <option value="Andere">Andere</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="bericht">Bericht:<sup class="rood">*</sup></label>
+                            <textarea name="vraag" id="bericht" rows="5" placeholder="Schrijf hier je vraag" required
+                                      class="form-control "></textarea>
+                            <div class="invalid-feedback">Gelieve hier je bericht te typen</div>
+                            <div id="vereist">
+                                <small>Is verplicht<sup class="rood">*</sup></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-outline-success btn-lg">Versturen</button>
+                        </div>
                     </div>
                 </div>
             </form>
@@ -302,6 +307,22 @@
 <script src="js/stylish-portfolio.min.js"></script>
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js" />
+<script>
+    // kijkt welk formulier nodig is
+    var form = document.querySelector(".needs-validation");
+    // kijkt naar de button om het event te starten
+    form.addEventListener('submit', function (event) {
+        // kijt of het valide moet zijn
+        if (form.checkValidity() === false) {
+            // disabled de normale reactie van de browser
+            event.preventDefault();
+            event.stopPropagation();
+        }
+        // voeft de klasse toe om aan te tonen wat valide is/was
+        form.classList.add('was-validated')
+    })
+</script>
+
 
 </body>
 

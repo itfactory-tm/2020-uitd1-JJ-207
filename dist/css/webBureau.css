@@ -1,5 +1,7 @@
 /* in stylish-portfolio.min.css wijzig je NIETS */
 /* schrijf in dit bestand je eigen stijlregels om opmaak aan te passen */
+
+/* EERST KLEINE SCHERMEN */
 * {
     padding: 0;
     margin: 0;
@@ -8,66 +10,39 @@
 
 form {
     margin: auto;
+    padding: 10px;
     text-align: center;
-    max-width: 550px;
 }
 
-/* styling for placeholder */
-::-webkit-input-placeholder {
-    padding-left: 5px;
-    vertical-align: center;
-    font-size: 14px;
-    line-height: 21px;
-    color: black;
-    font-variant: small-caps;
-    text-align: left;
-}
 
 /* styling input*/
-input, textarea{
+input, textarea {
     padding-left: 5px;
     border: 1px solid black;
 }
 
-select{
+
+select {
     cursor: pointer;
 }
 
-select option{
-    padding-left: 10px;
-}
-
-textarea{
+textarea {
     border: 1px solid black;
-    margin-left: 23px;
-}
-
-input:invalid , textarea:invalid{
-    background-color: rgba(255, 0, 0, 0.1);
-    background-image: url(dist/img/invalid.png);
-    background-position: center right;
-    padding: 5px;
 }
 
 
 #container {
-    width: 650px;
+    width: 400px;
     margin: auto;
+    padding: 30px 10px;
+    border: 2px solid rgba(29, 128, 159, 0.7);
+    border-radius: 20px;
+    box-shadow: 0 2px 5px 0 #666;
 }
 
-#categorie{
-    position: relative;
-}
-
-#keuze{
-    position: absolute;
-    top: 4vh;
-    right: 5vw;
-    border: 1px solid black;
-}
-
-#knop{
-    position: relative;
+#vereist {
+    text-align: left;
+    margin: 10px;
 }
 
 .rood {
@@ -75,6 +50,7 @@ input:invalid , textarea:invalid{
     background-color: transparent;
     color: red;
 }
+
 .btn-dark{
     border-radius: 25px;
     position: absolute;
@@ -86,4 +62,37 @@ input:invalid , textarea:invalid{
 .bg-custom{
     background: lightgreen;
     color: inherit;
+
+
+.btn-outline-success{
+    border: 5px rgba(192, 192, 192, 0.6) outset;
+}
+
+.btn-outline-success:hover {
+    color: white;
+    background-color: #1d80cf;
+    border: 5px rgba(192, 192, 192, 0.6) inset;
+    transition: all 700ms linear;
+}
+
+.invalid-feedback{
+    text-align: left;
+    margin: 5px;
+}
+
+/* medium schermen */
+@media screen and (min-width: 768px) {
+    #container{
+        width: 600px;
+    }
+
+}
+
+/* Grote schermen */
+@media screen and (min-width: 992px){
+    #container{
+        width: 800px;
+        padding: 20px;
+    }
+
 }
