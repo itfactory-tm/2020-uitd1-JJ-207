@@ -82,3 +82,8 @@ input:invalid , textarea:invalid{
     left: 5vw;
     cursor: pointer;
 }
+
+.bg-custom{
+    background: lightgreen;
+    color: inherit;
+}
