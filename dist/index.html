@@ -26,30 +26,24 @@
 <body id="page-top">
 
 <!-- Navigation -->
-<a class="menu-toggle rounded" href="#">
-    <i class="fas fa-bars"></i>
-</a>
-<nav id="sidebar-wrapper">
-    <ul class="sidebar-nav">
-        <li class="sidebar-brand">
-            <a class="js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-        </li>
-        <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#page-top">Home</a>
-        </li>
-        <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#services">Services</a>
-        </li>
-        <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
-        </li>
-        <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#contact">Contact</a>
-        </li>
-    </ul>
+<nav class="navbar navbar-expand-md navbar-light bg-custom">
+    <a href="index.html" class="navbar-brand"><img src="" alt="logo ...."> ONS LOGO</a>
+    <button class="navbar-toggler rounded-pill" data-toggle="collapse" data-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="#about" class="nav-link js-scroll-trigger">Wie zijn wij</a>
+            </li>
+            <li class="nav-item">
+                <a href="#services" class="nav-link js-scroll-trigger">Onze projecten</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact" class="nav-link js-scroll-trigger">Contact</a>
+            </li>
+        </ul>
+    </div>
 </nav>
 
 <!-- Header -->
@@ -203,8 +197,6 @@
 <section class="content-section bg-primary text-white">
     <div class="container text-center">
         <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-        <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
-        <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>
     </div>
 </section>
 
@@ -233,6 +225,7 @@
                                    size="25" required class="form-control  mt-2">
                             <div class="invalid-feedback">Dit is een ongeldige achternaam</div>
                         </div>
+
                     </div>
 
                     <div class="col-12 col-md-6">
@@ -312,6 +305,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
 <script src="js/stylish-portfolio.min.js"></script>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js" />
 <script>
     // kijkt welk formulier nodig is
     var form = document.querySelector(".needs-validation");

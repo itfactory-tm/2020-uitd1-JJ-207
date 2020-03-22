@@ -51,6 +51,19 @@ textarea {
     color: red;
 }
 
+.btn-dark{
+    border-radius: 25px;
+    position: absolute;
+    top: 11vh;
+    left: 5vw;
+    cursor: pointer;
+}
+
+.bg-custom{
+    background: lightgreen;
+    color: inherit;
+
+
 .btn-outline-success{
     border: 5px rgba(192, 192, 192, 0.6) outset;
 }
