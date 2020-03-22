@@ -59,10 +59,10 @@ textarea {
     cursor: pointer;
 }
 
-.bg-custom{
+.bg-custom {
     background: lightgreen;
     color: inherit;
-
+}
 
 .btn-outline-success{
     border: 5px rgba(192, 192, 192, 0.6) outset;
