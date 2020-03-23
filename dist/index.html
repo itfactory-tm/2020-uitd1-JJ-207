@@ -38,7 +38,8 @@
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-md navbar-light bg-custom">
-    <a href="index.html" class="navbar-brand"><img src="img/logo_project.svg" alt="Logo Cyber-dev" width="60px" height="60px"></a>
+    <a href="index.html" class="navbar-brand"><img src="img/logo_project.svg" alt="Logo Cyber-dev" width="60px"
+                                                   height="60px"></a>
     <button class="navbar-toggler rounded-pill" data-toggle="collapse" data-target="#navMenu">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -205,11 +206,17 @@
 </section>
 
 <!-- Call to Action -->
-<section class="content-section bg-primary text-white">
-    <div class="container text-center">
-        <h2 class="mb-4">The buttons below are impossible to resist...</h2>
+<div class="wrapper-naam">
+    <div class="neon-naam">
+        <span class="tekst">Cyber-Dev</span>
+        <span class="gradient"></span>
+        <span class="glitter"></span>
     </div>
-</section>
+</div>
+<div id="pauze">
+    <button type="button" class="start-animation btn-sm btn-danger">Play Animation</button>
+</div>
+
 
 <!-- Contact -->
 <section id="contact" class="content-section">
@@ -318,7 +325,24 @@
 <script src="js/stylish-portfolio.min.js"></script>
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"/>
+<script></script>
+
+
 <script>
+    $(document).ready(function () {
+        $(".start-animation").click(function () {
+            if ($(".glitter").css("animation-play-state") === "running")
+            {
+                $(".glitter").css("animation-play-state", "paused");
+            }
+        else
+            {
+                $(".glitter").css("animation-play-state", "running");
+
+            }
+        });
+    });
+
     // kijkt welk formulier nodig is
     var form = document.querySelector(".needs-validation");
     // kijkt naar de button om het event te starten
