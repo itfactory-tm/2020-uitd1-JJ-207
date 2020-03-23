@@ -7,6 +7,10 @@
     margin: 0;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 
 form {
     margin: auto;
@@ -51,7 +55,7 @@ textarea {
     color: red;
 }
 
-.btn-dark{
+.btn-dark {
     border-radius: 25px;
     position: absolute;
     top: 11vh;
@@ -64,7 +68,7 @@ textarea {
     color: inherit;
 }
 
-.btn-outline-success{
+.btn-outline-success {
     border: 5px rgba(192, 192, 192, 0.6) outset;
 }
 
@@ -75,27 +79,90 @@ textarea {
     transition: all 700ms linear;
 }
 
-.invalid-feedback{
+.invalid-feedback {
     text-align: left;
     margin: 5px;
 }
 
-.navbar-brand{
+.navbar-brand {
     padding: 0;
     margin: 0;
 }
 
 /* medium schermen */
 @media screen and (min-width: 768px) {
-    #container{
+    #container {
         width: 600px;
     }
+    #pauze{
+        text-align: center;
+        margin: -40px;
+    }
 
+    .wrapper-naam {
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #000000;
+    }
+
+    .neon-naam {
+        display: inline-flex;
+        filter: brightness(300%);
+        overflow: hidden;
+    }
+
+    .gradient {
+        background: -webkit-linear-gradient(to left, #4A569D, #DC2424);
+        background: linear-gradient(to left, #4A569D, #DC2424);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        mix-blend-mode: multiply;
+    }
+
+    .glitter {
+        background: radial-gradient(circle, white, black 35%) center / 25% 25%;
+        position: absolute;
+        top: -100%;
+        left: -100%;
+        right: 0;
+        bottom: 0;
+        mix-blend-mode: color-dodge;
+        animation: glitter-effect 3s linear infinite;
+    }
+
+    .tekst {
+        color: white;
+        background: black;
+        font-size: 130px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .tekst::before {
+        content: 'Cyber-Dev';
+        position: absolute;
+        mix-blend-mode: difference;
+        filter: blur(2px);
+    }
+
+
+    @keyframes glitter-effect {
+        to {
+            transform: translate(50%, 50%);
+        }
+
+
+    }
 }
 
 /* Grote schermen */
-@media screen and (min-width: 992px){
-    #container{
+@media screen and (min-width: 992px) {
+    #container {
         width: 800px;
         padding: 20px;
     }
