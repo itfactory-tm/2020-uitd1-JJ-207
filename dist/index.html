@@ -5,7 +5,8 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description"
+          content="Welkom op de website van Cyber-dev. Hier kan je meer info vinden over ons webbureau, wie we zijn en kan je ook een offerte aanvragen.">
     <meta name="author" content="Britt Ooms, Michiel Van Eynde, Stef Van Gool">
 
     <title>Stylish-portfolio - Bootstrap Theme</title>
@@ -37,6 +38,7 @@
 <body id="page-top">
 
 <!-- Navigation -->
+
 <nav class="navbar navbar-expand-md navbar-light bg-custom">
     <a href="index.html" class="navbar-brand"><img src="img/logo_project.svg" alt="Logo Cyber-dev" width="60px"
                                                    height="60px"></a>
@@ -59,15 +61,20 @@
 </nav>
 
 <!-- Header -->
-<header class="masthead d-flex">
-    <div class="container text-center my-auto">
-        <h1 class="mb-1">Stylish Portfolio</h1>
-        <h3 class="mb-5">
-            <em>A Free Bootstrap Theme by Start Bootstrap</em>
-        </h3>
-        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
-    </div>
-    <div class="overlay"></div>
+<header>
+    <section class="d-none d-md-block">
+        <div class="wrapper-naam">
+            <div class="neon-naam">
+                <span class="tekst">Cyber-Dev</span>
+                <span class="gradient"></span>
+                <span class="glitter"></span>
+            </div>
+        </div>
+        <div id="pauze">
+            <button type="button" class="start-animation btn-sm btn-danger">Play Animation</button>
+        </div>
+
+    </section>
 </header>
 
 <!-- About -->
@@ -206,18 +213,7 @@
 </section>
 
 <!-- Call to Action -->
-<section class="d-none d-md-block">
-<div class="wrapper-naam">
-    <div class="neon-naam">
-        <span class="tekst">Cyber-Dev</span>
-        <span class="gradient"></span>
-        <span class="glitter"></span>
-    </div>
-</div>
-<div id="pauze">
-    <button type="button" class="start-animation btn-sm btn-danger">Play Animation</button>
-</div>
-</section>
+
 
 <!-- Contact -->
 <section id="contact" class="content-section">
@@ -333,12 +329,9 @@
 <script>
     $(document).ready(function () {
         $(".start-animation").click(function () {
-            if ($(".glitter").css("animation-play-state") === "running")
-            {
+            if ($(".glitter").css("animation-play-state") === "running") {
                 $(".glitter").css("animation-play-state", "paused");
-            }
-        else
-            {
+            } else {
                 $(".glitter").css("animation-play-state", "running");
 
             }
