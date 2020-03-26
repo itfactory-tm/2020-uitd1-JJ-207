@@ -102,6 +102,7 @@ textarea {
     margin-top: 13px;
     border-radius: 100%;
     max-width: 100%;
+    align-content: center;
     height: auto;
     margin-bottom: 13px;
 }
