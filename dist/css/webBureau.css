@@ -98,7 +98,18 @@ textarea {
     width: auto;
 }
 
+.responsive {
+    max-width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px !important;
+}
+
 /* EERST KLEINE SCHERMEN */
+@media screen and (min-width: 576px) {
+
+}
 
 /* medium schermen */
 @media screen and (min-width: 768px) {
@@ -183,4 +194,11 @@ textarea {
         padding: 20px;
     }
 
+    .responsive {
+        max-width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px !important;
+    }
 }
