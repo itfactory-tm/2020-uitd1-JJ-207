@@ -1,14 +1,31 @@
 /* in stylish-portfolio.min.css wijzig je NIETS */
 /* schrijf in dit bestand je eigen stijlregels om opmaak aan te passen */
+
 * {
     padding: 0;
     margin: 0;
 }
 
+/* EERST KLEINE SCHERMEN */
 body {
     overflow-x: hidden;
+    font-family: 'Maven Pro', sans-serif;
 }
 
+h1, h2, h3, h4 {
+    font-family: 'David Libre', serif;
+}
+
+h1 {
+    margin: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+}
 
 form {
     margin: auto;
@@ -23,7 +40,6 @@ input, textarea {
     border: 1px solid black;
 }
 
-
 select {
     cursor: pointer;
 }
@@ -32,11 +48,19 @@ textarea {
     border: 1px solid black;
 }
 
-
 #container {
     width: 400px;
     margin: auto;
     padding: 30px 10px;
+    border: 2px solid rgba(29, 128, 159, 0.7);
+    border-radius: 20px;
+    box-shadow: 0 2px 5px 0 #666;
+}
+
+#container_php {
+    width: 400px;
+    margin: 30px auto;
+    padding: 20px;
     border: 2px solid rgba(29, 128, 159, 0.7);
     border-radius: 20px;
     box-shadow: 0 2px 5px 0 #666;
@@ -87,15 +111,15 @@ textarea {
     margin: 0;
 }
 
-.card-visual{
+.card-visual {
     background-color: white;
     color: black;
-    border-radius: 30px 30px 30px 30px;
+    border-radius: 30px;
     box-shadow: 3px 3px 3px black;
-    height: auto;
-    text-align: center;
-    margin-bottom: 50px;
     width: auto;
+    height: auto;
+    margin-bottom: 50px;
+    padding: 20px;
 }
 
 .responsive {
@@ -106,17 +130,22 @@ textarea {
     margin-bottom: 100px !important;
 }
 
-/* EERST KLEINE SCHERMEN */
-@media screen and (min-width: 576px) {
-
-}
-
 /* medium schermen */
 @media screen and (min-width: 768px) {
     #container {
         width: 600px;
     }
-    #pauze{
+
+    #container_php {
+        width: 600px;
+        margin: 30px auto;
+        padding: 20px;
+        border: 2px solid rgba(29, 128, 159, 0.7);
+        border-radius: 20px;
+        box-shadow: 0 2px 5px 0 #666;
+    }
+
+    #pauze {
         text-align: center;
         width: 100%;
         position: absolute;
@@ -161,13 +190,12 @@ textarea {
     }
 
     .tekst {
-        padding: 5px 10px ;
+        padding: 5px 10px;
         color: white;
         background: black;
         font-size: 130px;
         font-weight: bold;
         text-transform: uppercase;
-
     }
 
     .tekst::before {
@@ -192,6 +220,15 @@ textarea {
     #container {
         width: 800px;
         padding: 20px;
+    }
+
+    #container_php {
+        width: 800px;
+        margin: 30px auto;
+        padding: 20px;
+        border: 2px solid rgba(29, 128, 159, 0.7);
+        border-radius: 20px;
+        box-shadow: 0 2px 5px 0 #666;
     }
 
     .responsive {
