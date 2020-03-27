@@ -52,7 +52,7 @@ textarea {
     width: 400px;
     margin: auto;
     padding: 30px 10px;
-    border: 2px solid rgba(29, 128, 159, 0.7);
+    border: 2px solid #0C4377;
     border-radius: 20px;
     box-shadow: 0 2px 5px 0 #666;
 }
@@ -61,7 +61,7 @@ textarea {
     width: 400px;
     margin: 30px auto;
     padding: 20px;
-    border: 2px solid rgba(29, 128, 159, 0.7);
+    border: 2px solid #0C4377;
     border-radius: 20px;
     box-shadow: 0 2px 5px 0 #666;
 }
@@ -146,6 +146,13 @@ textarea {
     color: #0C4377;
 }
 
+.tekst-grijs{
+    color: #6E7D80;
+}
+
+.border-blauw{
+    border: #0C4377;
+}
 
 /* medium schermen */
 @media screen and (min-width: 768px) {
