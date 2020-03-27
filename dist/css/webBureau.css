@@ -85,13 +85,23 @@ textarea {
     cursor: pointer;
 }
 
-.bg-custom {
+.bg-nav {
     background: #03256c;
     color: inherit;
 }
-.nav-tekst{
+
+.bg-offwhite{
+    background-color: #f6eeec;
+}
+
+.tekst-offwhite{
     color: #f6eeec;
 }
+
+.tekst-blauw{
+    color: #03256c;
+}
+
 
 .btn-outline-success {
     border: 5px rgba(192, 192, 192, 0.6) outset;
