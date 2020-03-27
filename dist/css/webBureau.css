@@ -85,24 +85,6 @@ textarea {
     cursor: pointer;
 }
 
-.bg-nav {
-    background: #03256c;
-    color: inherit;
-}
-
-.bg-offwhite{
-    background-color: #f6eeec;
-}
-
-.tekst-offwhite{
-    color: #f6eeec;
-}
-
-.tekst-blauw{
-    color: #03256c;
-}
-
-
 .btn-outline-success {
     border: 5px rgba(192, 192, 192, 0.6) outset;
 }
@@ -142,6 +124,28 @@ textarea {
     margin-right: auto;
     margin-bottom: 100px !important;
 }
+
+/* kleuren */
+.bg-nav {
+    background: #0C4377;
+    color: inherit;
+}
+
+.bg-offwhite{
+    background-color: #f6eeec;
+}
+
+.bg-grijs{
+    background-color: #6E7D80;
+}
+.tekst-offwhite{
+    color: #f6eeec;
+}
+
+.tekst-blauw{
+    color: #0C4377;
+}
+
 
 /* medium schermen */
 @media screen and (min-width: 768px) {
