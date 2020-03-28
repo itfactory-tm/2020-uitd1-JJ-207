@@ -12,7 +12,8 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
 
     <!--  Fonts  -->
-    <!--    titel    -->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <!--  titel    -->
     <link href="https://fonts.googleapis.com/css?family=David+Libre:400,700&display=swap" rel="stylesheet">
     <!--  teksten  -->
     <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,700,900&display=swap" rel="stylesheet">

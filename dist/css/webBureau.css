@@ -12,11 +12,7 @@ body {
     font-family: 'Maven Pro', sans-serif;
 }
 
-h1{
-    font-family: 'David Libre', serif;
-}
-
-h2, h3, h4 {
+h1, h2, h3, h4 {
     font-family: 'Orbitron', sans-serif;
 }
 
@@ -56,7 +52,7 @@ textarea {
     width: 400px;
     margin: auto;
     padding: 30px 10px;
-    border: 2px solid rgba(29, 128, 159, 0.7);
+    border: 2px solid #0C4377;
     border-radius: 20px;
     box-shadow: 0 2px 5px 0 #666;
 }
@@ -65,7 +61,7 @@ textarea {
     width: 400px;
     margin: 30px auto;
     padding: 20px;
-    border: 2px solid rgba(29, 128, 159, 0.7);
+    border: 2px solid #0C4377;
     border-radius: 20px;
     box-shadow: 0 2px 5px 0 #666;
 }
@@ -87,11 +83,6 @@ textarea {
     top: 11vh;
     left: 5vw;
     cursor: pointer;
-}
-
-.bg-custom {
-    background: lightgreen;
-    color: inherit;
 }
 
 .btn-outline-success {
@@ -132,6 +123,34 @@ textarea {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 100px !important;
+}
+
+/* kleuren */
+.bg-blauw {
+    background: #0C4377;
+}
+
+.bg-offwhite{
+    background-color: #f6eeec;
+}
+
+.bg-grijs{
+    background-color: #6E7D80;
+}
+.tekst-offwhite{
+    color: #f6eeec;
+}
+
+.tekst-blauw{
+    color: #0C4377;
+}
+
+.tekst-grijs{
+    color: #6E7D80;
+}
+
+.border-blauw{
+    border: #0C4377;
 }
 
 /* medium schermen */
