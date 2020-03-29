@@ -106,19 +106,25 @@
             <li class="list-inline-item">
                 <a class="social-link rounded-circle text-white mr-3"
                    href="https://www.facebook.com/ToegepasteInformatica.ThomasMoreBE/">
-                    <i class="icon-social-facebook"></i>
+                    <i class="fab fa-facebook-square"></i>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a class="social-link rounded-circle text-white mr-3"
                    href="https://twitter.com/CyberDev6?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Eprofile%3ACyberDev6&ref_url=https%3A%2F%2Feduweb.thomasmore.be%2FMINA02%2Fwebbureau%2Findex.html">
-                    <i class="icon-social-twitter"></i>
+                    <i class="fab fa-twitter-square"></i>
                 </a>
             </li>
             <li class="list-inline-item">
-                <a class="social-link rounded-circle text-white"
+                <a class="social-link rounded-circle text-white mr-3"
                    href="https://github.com/itfactory-tm/2020-uitd1-JJ-207">
-                    <i class="icon-social-github"></i>
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="social-link rounded-circle text-white "
+                   href="https://discord.gg/kedmBc5">
+                    <i class="fab fa-discord"></i>
                 </a>
             </li>
         </ul>

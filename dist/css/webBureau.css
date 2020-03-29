@@ -71,6 +71,20 @@ textarea {
     margin: 10px;
 }
 
+.img {
+    width: 225px;
+    height: 239px;
+    overflow: hidden;
+}
+
+.img img{
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-visual:hover img{
+    transform: translate(0px, -241px);
+}
+
 .rood {
     font-weight: bold;
     background-color: transparent;
@@ -130,26 +144,27 @@ textarea {
     background: #0C4377;
 }
 
-.bg-offwhite{
+.bg-offwhite {
     background-color: #f6eeec;
 }
 
-.bg-grijs{
+.bg-grijs {
     background-color: #6E7D80;
 }
-.tekst-offwhite{
+
+.tekst-offwhite {
     color: #f6eeec;
 }
 
-.tekst-blauw{
+.tekst-blauw {
     color: #0C4377;
 }
 
-.tekst-grijs{
+.tekst-grijs {
     color: #6E7D80;
 }
 
-.border-blauw{
+.border-blauw {
     border: #0C4377;
 }
 
