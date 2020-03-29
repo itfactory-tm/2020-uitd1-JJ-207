@@ -82,6 +82,20 @@ textarea {
     margin: 10px;
 }
 
+.img {
+    width: 225px;
+    height: 239px;
+    overflow: hidden;
+}
+
+.img img{
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-visual:hover img{
+    transform: translate(0px, -241px);
+}
+
 .rood {
     font-weight: bold;
     background-color: transparent;
