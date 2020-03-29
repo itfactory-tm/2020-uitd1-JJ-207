@@ -77,7 +77,8 @@
             </div>
         </div>
         <div id="pauze">
-            <button type="button" class="start-animation btn-sm btn-outline-success">Play Animation</button>
+            <button type="button" class="start-animation btn-sm btn-outline-success"><i class="fas fa-play"></i>
+            </button>
         </div>
 
     </div>
@@ -128,7 +129,7 @@
             </div>
             <div class="col-12 col-lg-3 card-visual m-lg-1 responsive">
                 <div class="img img-fluid m-auto">
-                    <img src="img/stef_profiel.png" alt="foto Stef">
+                    <img src="img/Stef_profiel.png" alt="foto Stef">
                 </div>
                 <p class="text-justify">Ik ben Stef Van Gool, ik ben een eerstejaars student bij de IT Factory
                     Thomas
@@ -273,28 +274,29 @@
 <!-- Footer -->
 <footer class="footer text-center">
     <div class="container">
-        <ul class="list-inline mb-5">
+        <ul class="list-inline mb-5 ">
             <li class="list-inline-item">
-                <a class="social-link rounded-circle text-white mr-3"
-                   href="https://www.facebook.com/ToegepasteInformatica.ThomasMoreBE/">
+                <a class="bg-blauw social-link rounded-circle text-white mr-3 "
+                   href="https://www.facebook.com/ToegepasteInformatica.ThomasMoreBE/" target="_blank">
                     <i class="fab fa-facebook-square"></i>
                 </a>
             </li>
             <li class="list-inline-item">
-                <a class="social-link rounded-circle text-white mr-3"
-                   href="https://twitter.com/CyberDev6?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Eprofile%3ACyberDev6&ref_url=https%3A%2F%2Feduweb.thomasmore.be%2FMINA02%2Fwebbureau%2Findex.html">
+                <a class="bg-blauw social-link rounded-circle text-white mr-3"
+                   href="https://twitter.com/CyberDev6?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Eprofile%3ACyberDev6&ref_url=https%3A%2F%2Feduweb.thomasmore.be%2FMINA02%2Fwebbureau%2Findex.html"
+                   target="_blank">
                     <i class="fab fa-twitter-square"></i>
                 </a>
             </li>
             <li class="list-inline-item">
-                <a class="social-link rounded-circle text-white mr-3"
-                   href="https://github.com/itfactory-tm/2020-uitd1-JJ-207">
+                <a class="bg-blauw social-link rounded-circle text-white mr-3"
+                   href="https://github.com/itfactory-tm/2020-uitd1-JJ-207" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
             </li>
             <li class="list-inline-item">
-                <a class="social-link rounded-circle text-white "
-                   href="https://discord.gg/kedmBc5">
+                <a class="bg-blauw social-link rounded-circle text-white "
+                   href="https://discord.gg/kedmBc5" target="_blank">
                     <i class="fab fa-discord"></i>
                 </a>
             </li>
@@ -323,8 +325,10 @@
         $(".start-animation").click(function () {
             if ($(".glitter").css("animation-play-state") === "running") {
                 $(".glitter").css("animation-play-state", "paused");
+                $(this).html("<i class='fas fa-pause'></i>");
             } else {
                 $(".glitter").css("animation-play-state", "running");
+                $(this).html("<i class='fas fa-play'></i>");
 
             }
         });
