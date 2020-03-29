@@ -1,8 +1,11 @@
 <!doctype html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Welkom op de website van Cyber-Dev. Hier kan je meer info vinden over ons webbureau, wie we zijn en kan je ook een offerte aanvragen.">
+    <meta name="author" content="Britt Ooms, Michiel Van Eynde, Stef Van Gool">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jouw formulier</title>
     <!-- CSS: Bootstrap, FA5 -->
@@ -36,7 +39,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-md navbar-light bg-custom">
+<nav class="navbar navbar-expand-md bg-blauw nav-tekst-offwhite">
     <a href="index.html" class="navbar-brand"><img src="img/logo_project.svg" alt="Logo Cyber-dev" width="60"
                                                    height="60"></a>
     <button class="navbar-toggler rounded-pill" data-toggle="collapse" data-target="#navMenu">
@@ -45,13 +48,13 @@
     <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a href="index.html#about" class="nav-link js-scroll-trigger">Wie zijn wij</a>
+                <a href="index.html#about" class="nav-link tekst-offwhite js-scroll-trigger">Wie zijn wij</a>
             </li>
             <li class="nav-item">
-                <a href="index.html#projecten" class="nav-link js-scroll-trigger">Onze projecten</a>
+                <a href="index.html#projecten" class="nav-link tekst-offwhite js-scroll-trigger">Onze projecten</a>
             </li>
             <li class="nav-item">
-                <a href="index.html#contact" class="nav-link js-scroll-trigger">Contact</a>
+                <a href="index.html#contact" class="nav-link tekst-offwhite js-scroll-trigger">Contact</a>
             </li>
         </ul>
     </div>
