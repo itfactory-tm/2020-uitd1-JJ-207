@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="css/stylish-portfolio.min.css">
+
+    <!--  eigen stylesheet  -->
+    <link rel="stylesheet" href="css/webBureau.css">
 
     <!--  Fonts  -->
     <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
@@ -21,8 +25,6 @@
     <!--  teksten  -->
     <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,700,900&display=swap" rel="stylesheet">
 
-    <!--  eigen stylesheet  -->
-    <link rel="stylesheet" href="css/webBureau.css">
 
     <!--  Favicon  -->
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
@@ -39,11 +41,12 @@
 </head>
 <body>
 
+
 <nav class="navbar navbar-expand-md bg-blauw nav-tekst-offwhite">
     <a href="index.html" class="navbar-brand"><img src="img/logo_project.svg" alt="Logo Cyber-dev" width="60"
                                                    height="60"></a>
     <button class="navbar-toggler rounded-pill" data-toggle="collapse" data-target="#navMenu">
-        <span class="navbar-toggler-icon"></span>
+        <span class="tekst-offwhite"><i class="fas fa-bars"></i></span>
     </button>
     <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ml-auto">
@@ -59,6 +62,7 @@
         </ul>
     </div>
 </nav>
+
 
 <div id="container_php">
     <h1>Bedankt voor je informatie</h1>
@@ -105,28 +109,29 @@
 </div>
 <footer class="footer text-center">
     <div class="container">
-        <ul class="list-inline mb-5">
+        <ul class="list-inline mb-5 ">
             <li class="list-inline-item">
-                <a class="social-link rounded-circle text-white mr-3"
-                   href="https://www.facebook.com/ToegepasteInformatica.ThomasMoreBE/">
+                <a class="bg-blauw social-link rounded-circle text-white mr-3 "
+                   href="https://www.facebook.com/ToegepasteInformatica.ThomasMoreBE/" target="_blank">
                     <i class="fab fa-facebook-square"></i>
                 </a>
             </li>
             <li class="list-inline-item">
-                <a class="social-link rounded-circle text-white mr-3"
-                   href="https://twitter.com/CyberDev6?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Eprofile%3ACyberDev6&ref_url=https%3A%2F%2Feduweb.thomasmore.be%2FMINA02%2Fwebbureau%2Findex.html">
+                <a class="bg-blauw social-link rounded-circle text-white mr-3"
+                   href="https://twitter.com/CyberDev6?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Eprofile%3ACyberDev6&ref_url=https%3A%2F%2Feduweb.thomasmore.be%2FMINA02%2Fwebbureau%2Findex.html"
+                   target="_blank">
                     <i class="fab fa-twitter-square"></i>
                 </a>
             </li>
             <li class="list-inline-item">
-                <a class="social-link rounded-circle text-white mr-3"
-                   href="https://github.com/itfactory-tm/2020-uitd1-JJ-207">
+                <a class="bg-blauw social-link rounded-circle text-white mr-3"
+                   href="https://github.com/itfactory-tm/2020-uitd1-JJ-207" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
             </li>
             <li class="list-inline-item">
-                <a class="social-link rounded-circle text-white "
-                   href="https://discord.gg/kedmBc5">
+                <a class="bg-blauw social-link rounded-circle text-white"
+                   href="https://discord.gg/kedmBc5" target="_blank">
                     <i class="fab fa-discord"></i>
                 </a>
             </li>
