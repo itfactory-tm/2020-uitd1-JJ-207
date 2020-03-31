@@ -32,6 +32,16 @@ nav a {
     border-radius: 10px;
 }
 
+nav a:link, nav a:visited{
+    background-color: #0C4377;
+    color: #f6eeec; !important;
+}
+
+nav a:focus{
+    background-color: #f6eeec;
+    color: #0C4377;
+}
+
 nav a:hover {
     background-color: white;
     color: #0C4377;
@@ -57,6 +67,16 @@ select {
 
 textarea {
     border: 1px solid black;
+}
+
+footer.footer .social-link{
+    background-color: #0C4377;
+    color: #f6eeec;
+}
+
+footer.footer .social-link:hover{
+    color: #0C4377;
+    background-color: rgba(52,58,64,.7);
 }
 
 #container {
@@ -88,11 +108,11 @@ textarea {
     overflow: hidden;
 }
 
-.img img{
+.img img {
     transition: transform 0.2s ease-in-out;
 }
 
-.card-visual:hover img{
+.card-visual:hover img {
     transform: translate(0px, -241px);
 }
 
@@ -155,31 +175,36 @@ textarea {
     margin-bottom: 100px !important;
 }
 
-.img_description{
+.img_description {
     visibility: hidden;
     opacity: 0;
     transition: opacity .2s, visibility .2s;
 }
 
-.project:hover .img_description{
-   visibility: visible;
+.project:hover .img_description {
+    visibility: visible;
     opacity: 1;
 }
 
+.portfolio-item:hover .caption{
+    background-color: rgba(12, 67, 119, 0.7) !important;
+}
 
 /* kleuren */
 .bg-blauw {
-    background: #0C4377 !important;
+    background-color: #0C4377 ;
     color: unset;
 }
 
 .bg-offwhite {
     background-color: #f6eeec;
-    color: unset;
+    color: inherit;
 }
 
 .bg-grijs {
-    background-color: #6E7D80;
+    background-image: url("../img/achtergrond.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     color: unset;
 }
 
@@ -226,7 +251,7 @@ textarea {
         text-align: center;
         width: 100%;
         position: absolute;
-        top: 53%;
+        top: 54%;
     }
 
     .wrapper-naam {
@@ -242,15 +267,6 @@ textarea {
         display: inline-flex;
         filter: brightness(300%);
         overflow: hidden;
-    }
-
-    .gradient {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        mix-blend-mode: multiply;
     }
 
     .glitter {
