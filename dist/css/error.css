@@ -1,0 +1,36 @@
+body {
+    overflow-x: hidden;
+    font-family: 'Maven Pro', sans-serif;
+    text-align: center;
+
+    background-image: url(../img/achtergrond.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: unset;
+}
+
+h1, h2{
+    font-family: 'Orbitron', sans-serif;
+}
+
+.kader{
+    background-color: #f6eeec;
+    color: black;
+    border: 2px solid #0C4377;
+    border-radius: 20px;
+    padding: 25px;
+
+}
+
+.return{
+    color: #f6eeec;
+    background-color: #0C4377;
+    padding: 10px;
+}
+
+.return:hover{
+    background-color: rgba(52,58,64,.7);
+}
