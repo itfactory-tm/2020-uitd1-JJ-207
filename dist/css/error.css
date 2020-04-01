@@ -5,8 +5,8 @@ body {
     background-image: url(../img/achtergrond.jpg);
     background-position: center center;
     background-size: cover;
-    background-position: bottom;
-    background-attachment: fixed;
+    /*background-position: bottom;*/
+    /*background-attachment: fixed;*/
     background-repeat: no-repeat;
     color: unset;
 }
