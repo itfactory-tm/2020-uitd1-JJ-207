@@ -14,7 +14,7 @@ body {
     background-color: #f6eeec;
     color: black;
     padding: 25px;
-    text-align: center;
+    align-content: center;
 }
 
 .return{
