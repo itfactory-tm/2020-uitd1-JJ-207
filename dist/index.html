@@ -30,14 +30,14 @@
     <link rel="stylesheet" href="css/webBureau.css">
 
     <!--  Favicon  -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/favicon/site.webmanifest">
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#000000">
-    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/html5/uitdaging1/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/html5/uitdaging1/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/html5/uitdaging1/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/html5/uitdaging1/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/html5/uitdaging1/favicon/safari-pinned-tab.svg" color="#000000">
+    <link rel="shortcut icon" href="/html5/uitdaging1/favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#2d89ef">
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="msapplication-config" content="/html5/uitdaging1/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
 </head>
@@ -46,9 +46,9 @@
 <!-- Navigation -->
 
 <nav class="navbar navbar-expand-md bg-blauw nav-tekst-offwhite">
-    <a href="index.html" class="navbar-brand"><img src="/img/logo_project.svg" alt="Logo Cyber-dev" width="60"
+    <a href="index.html" class="navbar-brand"><img src="img/logo_project.svg" alt="Logo Cyber-dev" width="60"
                                                    height="60"></a>
-    <button class="navbar-toggler rounded-pill" data-toggle="collapse" data-target="#navMenu">
+    <button class="navbar-toggler rounded-pill" data-toggle="collapse" data-target="#navMenu" name="menu">
         <span class="tekst-offwhite"><i class="fas fa-bars"></i></span>
     </button>
     <div class="collapse navbar-collapse" id="navMenu">
@@ -76,7 +76,7 @@
             </div>
         </div>
         <div id="pauze">
-            <button type="button" class="start-animation btn-sm btn-outline-success"><i class="fas fa-play"></i>
+            <button type="button" class="start-animation btn-sm btn-outline-success" title="pauze" name="Pauzeknop"><i class="fas fa-play"></i>
             </button>
         </div>
 
@@ -89,9 +89,7 @@
         <div class="row">
             <div class="col-lg-10 mx-auto">
                 <h2 class="">Cyber-Dev brengt uw website tot leven!</h2>
-                <p class="lead mb-5">Wij maken voor u of uw bedrijf een moderne, toegankelijke website.
-                    <!--                    <a href="https://unsplash.com/">Unsplash</a>!</p>-->
-                    <!--                <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a>-->
+                <p class="lead mb-5">Wij maken voor u of uw bedrijf een moderne, toegankelijke website.</p>
             </div>
         </div>
     </div>
@@ -151,7 +149,7 @@
         </div>
         <div class="row no-gutters">
             <div class="col-lg-12">
-                <a class="portfolio-item project" href="/link" target="_blank">
+                <a class="portfolio-item project" href="#projecten">
                     <div class="caption">
                         <div class="caption-content">
                             <h2 class="img_description">Uitdaging 2</h2>
@@ -162,7 +160,7 @@
                 </a>
             </div>
             <div class="col-lg-4">
-                <a class="portfolio-item project" href="https://michielvepo.sinners.be/">
+                <a class="portfolio-item project" href="https://michielvepo.sinners.be/" target="_blank">
                     <div class="caption">
                         <div class="caption-content">
                             <h2 class="img_description">Webruimte Michiel</h2>
@@ -172,7 +170,7 @@
                 </a>
             </div>
             <div class="col-lg-4">
-                <a class="portfolio-item project" href="https://bitbit.sinners.be/">
+                <a class="portfolio-item project" href="https://bitbit.sinners.be/" target="_blank">
                     <div class="caption">
                         <div class="caption-content">
                             <h2 class="img_description">Webruimte Britt</h2>
@@ -182,7 +180,7 @@
                 </a>
             </div>
             <div class="col-lg-4 test">
-                <a class="portfolio-item project" href="https://svg.sinners.be/">
+                <a class="portfolio-item project" href="https://svg.sinners.be/" target="_blank">
                     <div class="caption">
                         <div class="caption-content">
                             <h2 class="img_description">Webruimte Stef</h2>
@@ -259,7 +257,7 @@
                     </div>
                     <div class="col-12">
                         <div class="form-group">
-                            <button type="submit" class="btn btn-outline-success btn-lg">Versturen</button>
+                            <button type="submit" class="btn btn-outline-success btn-lg" title="Verstuur" name="Verstuurknop">Versturen</button>
                         </div>
                     </div>
                 </div>
@@ -275,26 +273,26 @@
         <ul class="list-inline mb-5 ">
             <li class="list-inline-item">
                 <a class="bg-blauw social-link rounded-circle text-white mr-3 "
-                   href="https://www.facebook.com/ToegepasteInformatica.ThomasMoreBE/" target="_blank">
+                   href="https://www.facebook.com/ToegepasteInformatica.ThomasMoreBE/" target="_blank" title="Facebook">
                     <i class="fab fa-facebook-square"></i>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a class="bg-blauw social-link rounded-circle text-white mr-3"
                    href="https://twitter.com/CyberDev6?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Eprofile%3ACyberDev6&ref_url=https%3A%2F%2Feduweb.thomasmore.be%2FMINA02%2Fwebbureau%2Findex.html"
-                   target="_blank">
+                   target="_blank" title="Twitter">
                     <i class="fab fa-twitter-square"></i>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a class="bg-blauw social-link rounded-circle text-white mr-3"
-                   href="https://github.com/itfactory-tm/2020-uitd1-JJ-207" target="_blank">
+                   href="https://github.com/itfactory-tm/2020-uitd1-JJ-207" target="_blank" title="Gitbub">
                     <i class="fab fa-github"></i>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a class="bg-blauw social-link rounded-circle text-white"
-                   href="https://discord.gg/kedmBc5" target="_blank">
+                   href="https://discord.gg/kedmBc5" target="_blank" title="Discord">
                     <i class="fab fa-discord"></i>
                 </a>
             </li>
@@ -304,7 +302,7 @@
 </footer>
 
 <!-- Scroll to Top Button-->
-<a class="scroll-to-top rounded js-scroll-trigger bg-blauw" href="#page-top">
+<a class="scroll-to-top rounded js-scroll-trigger bg-blauw" href="#page-top" title="Naar boven">
     <i class="far fa-2x fa-caret-square-up tekst-offwhite p-2"></i>
 </a>
 
@@ -323,9 +321,11 @@
         $(".start-animation").click(function () {
             if ($(".glitter").css("animation-play-state") === "running") {
                 $(".glitter").css("animation-play-state", "paused");
+                $(this).attr("title", "Start");
                 $(this).html("<i class='fas fa-pause'></i>");
             } else {
                 $(".glitter").css("animation-play-state", "running");
+                $(this).attr("title", "pauze");
                 $(this).html("<i class='fas fa-play'></i>");
 
             }
