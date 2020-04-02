@@ -24,8 +24,8 @@ body {
 }
 
 .return:hover{
-    background-color: #0C4377;
-    color: #f6eeec;
+    background-color: rgba(52,58,64,.7);
+    color: white;
     text-decoration: none;
 }
 
