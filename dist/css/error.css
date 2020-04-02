@@ -24,7 +24,9 @@ body {
 }
 
 .return:hover{
-    background-color: rgba(52,58,64,.7);
+    background-color: #0C4377;
+    color: #f6eeec;
+    text-decoration: none;
 }
 
 @media screen and (min-width: 768px) {
