@@ -34,7 +34,7 @@ nav a {
 
 nav a:link, nav a:visited{
     background-color: #0C4377;
-    color: #f6eeec; !important;
+    color: #f6eeec !important;
 }
 
 nav a:focus{
